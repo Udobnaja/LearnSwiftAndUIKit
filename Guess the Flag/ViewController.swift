@@ -13,10 +13,10 @@ class ViewController: UIViewController {
   private lazy var button2 = makeButton(tag: 1)
   private lazy var button3 = makeButton(tag: 2)
 
-  var countries = [String]()
-  var score = 0
-  var correctAnswer = 0
-  var tryCount = 0
+  private var countries = ["estonia", "russia", "uk", "us", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "spain"]
+  private var score = 0
+  private var correctAnswer = 0
+  private var tryCount = 0
 
   var currentTitle: String {
     return "\(countries[correctAnswer].uppercased()), Your score \(score)"
@@ -31,17 +31,18 @@ class ViewController: UIViewController {
     alignButton(button1, topAnchor: view.safeAreaLayoutGuide.topAnchor)
 
     view.addSubview(button2)
-    alignButton(button2, topAnchor: button1.bottomAnchor)
+    alignButton(button2, topAnchor: button1.bottomAnchor, heightEqualTo: button1.heightAnchor)
 
     view.addSubview(button3)
-    alignButton(button3, topAnchor: button2.bottomAnchor)
+    alignButton(button3, topAnchor: button2.bottomAnchor, heightEqualTo: button2.heightAnchor)
+
+    view.safeAreaLayoutGuide.bottomAnchor.constraint(greaterThanOrEqualTo: button3.bottomAnchor, constant: 20).isActive = true
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
     navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Show my score", style: .plain, target: self, action: #selector(scoreTapped))
-    countries += ["estonia", "russia", "uk", "us", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "spain"]
 
     askQuestion();
   }
@@ -119,11 +120,13 @@ class ViewController: UIViewController {
     return button;
   }
 
-  private func alignButton(_ button: UIButton, topAnchor anchor: NSLayoutAnchor<NSLayoutYAxisAnchor>) {
+  private func alignButton(_ button: UIButton, topAnchor anchor: NSLayoutAnchor<NSLayoutYAxisAnchor>, heightEqualTo height: NSLayoutAnchor<NSLayoutDimension>? = nil) {
+    if let height = height {
+      button.heightAnchor.constraint(equalTo: height).isActive = true
+    }
     button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
     button.topAnchor.constraint(equalTo: anchor, constant: 40).isActive = true
-    button.widthAnchor.constraint(equalToConstant: 200).isActive = true
-    button.heightAnchor.constraint(equalToConstant: 100).isActive = true
+    button.widthAnchor.constraint(equalTo: button.heightAnchor, multiplier: 2).isActive = true
   }
 
 

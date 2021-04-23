@@ -31,16 +31,17 @@ depends-top-level:
 - !private "..."
 - !private "<"
 - !private "=="
-- !private "Array"
+- "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
 - "NSLayoutAnchor"
+- "NSLayoutDimension"
 - "NSLayoutYAxisAnchor"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIBarButtonItem"
@@ -70,12 +71,11 @@ depends-top-level:
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["s18AdditiveArithmeticP", "random"]
-- ["Sa", "init"]
 - !private ["Sa", "shuffle"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "uppercased"]
 - ["SK", ""]
-- ["SK", "init"]
+- !private ["SK", "init"]
 - !private ["SK", "shuffle"]
 - !private ["SK", "subscript"]
 - !private ["SK", "uppercased"]
@@ -101,7 +101,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["s7CVarArgP", "Int"]
-- ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
@@ -131,7 +131,7 @@ depends-member:
 - !private ["s7CVarArgP", "countries"]
 - !private ["s7CVarArgP", "currentTitle"]
 - !private ["s7CVarArgP", "heightAnchor"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isActive"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "lightGray"]
@@ -159,7 +159,7 @@ depends-member:
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "widthAnchor"]
 - ["Sl", ""]
-- ["Sl", "init"]
+- !private ["Sl", "init"]
 - !private ["Sl", "shuffle"]
 - !private ["Sl", "subscript"]
 - !private ["Sl", "uppercased"]
@@ -167,12 +167,11 @@ depends-member:
 - !private ["SL", "init"]
 - !private ["SL", "random"]
 - !private ["SL", "uppercased"]
-- ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "shuffle"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["10Foundation15ContiguousBytesP", "uppercased"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
-- ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
@@ -202,7 +201,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "countries"]
 - !private ["s28CustomDebugStringConvertibleP", "currentTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "heightAnchor"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isActive"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "lightGray"]
@@ -230,7 +229,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "widthAnchor"]
 - !private ["s17CustomReflectableP", "addSubview"]
 - !private ["s17CustomReflectableP", "backgroundColor"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "random"]
 - !private ["s17CustomReflectableP", "safeAreaLayoutGuide"]
 - !private ["s17CustomReflectableP", "shuffle"]
@@ -238,7 +237,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "uppercased"]
 - !private ["s17CustomReflectableP", "white"]
 - !private ["s23CustomStringConvertibleP", "Int"]
-- ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
@@ -270,7 +269,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "countries"]
 - !private ["s23CustomStringConvertibleP", "currentTitle"]
 - !private ["s23CustomStringConvertibleP", "heightAnchor"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isActive"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "lightGray"]
@@ -297,14 +296,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "widthAnchor"]
-- ["10Foundation12DataProtocolP", ""]
-- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", ""]
 - !private ["10Foundation12DataProtocolP", "shuffle"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "uppercased"]
 - !private ["Se", "addSubview"]
 - !private ["Se", "backgroundColor"]
-- ["Se", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "random"]
 - !private ["Se", "safeAreaLayoutGuide"]
 - !private ["Se", "shuffle"]
@@ -315,7 +313,7 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "addSubview"]
 - !private ["SE", "backgroundColor"]
-- ["SE", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "random"]
 - !private ["SE", "safeAreaLayoutGuide"]
 - !private ["SE", "shuffle"]
@@ -323,7 +321,7 @@ depends-member:
 - !private ["SE", "uppercased"]
 - !private ["SE", "white"]
 - !private ["SQ", "Int"]
-- ["SQ", "String"]
+- !private ["SQ", "String"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIBarButtonItem"]
@@ -356,7 +354,7 @@ depends-member:
 - !private ["SQ", "currentTitle"]
 - !private ["SQ", "default"]
 - !private ["SQ", "heightAnchor"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "isActive"]
 - !private ["SQ", "layer"]
 - !private ["SQ", "lightGray"]
@@ -388,7 +386,7 @@ depends-member:
 - !private ["SQ", "widthAnchor"]
 - !private ["So15UIControlEventsV", "allEvents"]
 - !private ["So15UIControlEventsV", "touchUpInside"]
-- ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "allEvents"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
@@ -419,7 +417,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "uppercased"]
 - !private ["s17FixedWidthIntegerP", "random"]
 - !private ["SH", "Int"]
-- ["SH", "String"]
+- !private ["SH", "String"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIBarButtonItem"]
@@ -451,7 +449,7 @@ depends-member:
 - !private ["SH", "currentTitle"]
 - !private ["SH", "default"]
 - !private ["SH", "heightAnchor"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - !private ["SH", "isActive"]
 - !private ["SH", "layer"]
 - !private ["SH", "lightGray"]
@@ -487,12 +485,10 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "random"]
 - !private ["s10MirrorPathP", "uppercased"]
-- ["SM", ""]
-- ["SM", "init"]
+- !private ["SM", ""]
 - !private ["SM", "shuffle"]
 - !private ["SM", "subscript"]
 - !private ["SM", "uppercased"]
-- ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "shuffle"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", "$__lazy_storage_$_button1"]
@@ -500,6 +496,7 @@ depends-member:
 - ["So8NSCodingP", "$__lazy_storage_$_button3"]
 - ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "NSLayoutAnchor"]
+- ["So8NSCodingP", "NSLayoutDimension"]
 - ["So8NSCodingP", "NSLayoutYAxisAnchor"]
 - ["So8NSCodingP", "String"]
 - ["So8NSCodingP", "UIAlertAction"]
@@ -605,6 +602,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "$__lazy_storage_$_button3"]
 - ["So26NSExtensionRequestHandlingP", "Int"]
 - ["So26NSExtensionRequestHandlingP", "NSLayoutAnchor"]
+- ["So26NSExtensionRequestHandlingP", "NSLayoutDimension"]
 - ["So26NSExtensionRequestHandlingP", "NSLayoutYAxisAnchor"]
 - ["So26NSExtensionRequestHandlingP", "String"]
 - ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
@@ -681,6 +679,7 @@ depends-member:
 - ["So8NSObjectC", "$__lazy_storage_$_button3"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NSLayoutAnchor"]
+- ["So8NSObjectC", "NSLayoutDimension"]
 - ["So8NSObjectC", "NSLayoutYAxisAnchor"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIAlertAction"]
@@ -774,6 +773,7 @@ depends-member:
 - ["So8NSObjectP", "$__lazy_storage_$_button3"]
 - ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "NSLayoutAnchor"]
+- ["So8NSObjectP", "NSLayoutDimension"]
 - ["So8NSObjectP", "NSLayoutYAxisAnchor"]
 - ["So8NSObjectP", "String"]
 - ["So8NSObjectP", "UIAlertAction"]
@@ -879,13 +879,12 @@ depends-member:
 - !private ["Sq", "backgroundColor"]
 - !private ["Sq", "safeAreaLayoutGuide"]
 - !private ["Sq", "white"]
-- ["Sk", ""]
-- ["Sk", "init"]
+- !private ["Sk", ""]
 - !private ["Sk", "shuffle"]
 - !private ["Sk", "subscript"]
 - !private ["Sk", "uppercased"]
-- ["Sm", ""]
-- ["Sm", "init"]
+- !private ["Sm", ""]
+- !private ["Sm", "init"]
 - !private ["Sm", "shuffle"]
 - !private ["Sm", "subscript"]
 - !private ["Sm", "uppercased"]
@@ -898,7 +897,7 @@ depends-member:
 - !private ["SY", "touchUpInside"]
 - !private ["s10SIMDScalarP", "random"]
 - ["ST", ""]
-- ["ST", "init"]
+- !private ["ST", "init"]
 - !private ["ST", "shuffle"]
 - !private ["ST", "subscript"]
 - !private ["ST", "uppercased"]
@@ -979,6 +978,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "$__lazy_storage_$_button3"]
 - ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "NSLayoutAnchor"]
+- ["So21UIAppearanceContainerP", "NSLayoutDimension"]
 - ["So21UIAppearanceContainerP", "NSLayoutYAxisAnchor"]
 - ["So21UIAppearanceContainerP", "String"]
 - ["So21UIAppearanceContainerP", "UIAlertAction"]
@@ -1051,6 +1051,7 @@ depends-member:
 - ["So18UIContentContainerP", "$__lazy_storage_$_button3"]
 - ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "NSLayoutAnchor"]
+- ["So18UIContentContainerP", "NSLayoutDimension"]
 - ["So18UIContentContainerP", "NSLayoutYAxisAnchor"]
 - ["So18UIContentContainerP", "String"]
 - ["So18UIContentContainerP", "UIAlertAction"]
@@ -1145,6 +1146,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "$__lazy_storage_$_button3"]
 - ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "NSLayoutAnchor"]
+- ["So18UIFocusEnvironmentP", "NSLayoutDimension"]
 - ["So18UIFocusEnvironmentP", "NSLayoutYAxisAnchor"]
 - ["So18UIFocusEnvironmentP", "String"]
 - ["So18UIFocusEnvironmentP", "UIAlertAction"]
@@ -1242,6 +1244,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "tag"]
 - !private ["So24UILargeContentViewerItemP", "topAnchor"]
 - !private ["So24UILargeContentViewerItemP", "widthAnchor"]
+- !private ["So13UILayoutGuideC", "bottomAnchor"]
 - !private ["So13UILayoutGuideC", "centerXAnchor"]
 - !private ["So13UILayoutGuideC", "topAnchor"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
@@ -1250,6 +1253,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "$__lazy_storage_$_button3"]
 - ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "NSLayoutAnchor"]
+- ["So30UIPasteConfigurationSupportingP", "NSLayoutDimension"]
 - ["So30UIPasteConfigurationSupportingP", "NSLayoutYAxisAnchor"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
 - ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
@@ -1306,6 +1310,7 @@ depends-member:
 - ["So11UIResponderC", "$__lazy_storage_$_button3"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "NSLayoutAnchor"]
+- ["So11UIResponderC", "NSLayoutDimension"]
 - ["So11UIResponderC", "NSLayoutYAxisAnchor"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIAlertAction"]
@@ -1362,6 +1367,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "$__lazy_storage_$_button3"]
 - ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "NSLayoutAnchor"]
+- ["So30UIResponderStandardEditActionsP", "NSLayoutDimension"]
 - ["So30UIResponderStandardEditActionsP", "NSLayoutYAxisAnchor"]
 - ["So30UIResponderStandardEditActionsP", "String"]
 - ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
@@ -1431,6 +1437,7 @@ depends-member:
 - ["So16UIStateRestoringP", "$__lazy_storage_$_button3"]
 - ["So16UIStateRestoringP", "Int"]
 - ["So16UIStateRestoringP", "NSLayoutAnchor"]
+- ["So16UIStateRestoringP", "NSLayoutDimension"]
 - ["So16UIStateRestoringP", "NSLayoutYAxisAnchor"]
 - ["So16UIStateRestoringP", "String"]
 - ["So16UIStateRestoringP", "UIAlertAction"]
@@ -1472,6 +1479,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "$__lazy_storage_$_button3"]
 - ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "NSLayoutAnchor"]
+- ["So18UITraitEnvironmentP", "NSLayoutDimension"]
 - ["So18UITraitEnvironmentP", "NSLayoutYAxisAnchor"]
 - ["So18UITraitEnvironmentP", "String"]
 - ["So18UITraitEnvironmentP", "UIAlertAction"]
@@ -1527,6 +1535,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "$__lazy_storage_$_button3"]
 - ["So23UIUserActivityRestoringP", "Int"]
 - ["So23UIUserActivityRestoringP", "NSLayoutAnchor"]
+- ["So23UIUserActivityRestoringP", "NSLayoutDimension"]
 - ["So23UIUserActivityRestoringP", "NSLayoutYAxisAnchor"]
 - ["So23UIUserActivityRestoringP", "String"]
 - ["So23UIUserActivityRestoringP", "UIAlertAction"]
@@ -1599,6 +1608,7 @@ depends-member:
 - ["So16UIViewControllerC", "$__lazy_storage_$_button3"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "NSLayoutAnchor"]
+- ["So16UIViewControllerC", "NSLayoutDimension"]
 - ["So16UIViewControllerC", "NSLayoutYAxisAnchor"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIAlertAction"]
@@ -1640,6 +1650,7 @@ depends-member:
 - !private ["14Guess_the_Flag14ViewControllerC", "$__lazy_storage_$_button3"]
 - ["14Guess_the_Flag14ViewControllerC", "Int"]
 - ["14Guess_the_Flag14ViewControllerC", "NSLayoutAnchor"]
+- ["14Guess_the_Flag14ViewControllerC", "NSLayoutDimension"]
 - ["14Guess_the_Flag14ViewControllerC", "NSLayoutYAxisAnchor"]
 - ["14Guess_the_Flag14ViewControllerC", "String"]
 - ["14Guess_the_Flag14ViewControllerC", "UIAlertAction"]
@@ -1657,8 +1668,8 @@ depends-member:
 - !private ["14Guess_the_Flag14ViewControllerC", "button3"]
 - ["14Guess_the_Flag14ViewControllerC", "buttonTapped"]
 - !private ["14Guess_the_Flag14ViewControllerC", "continueAsking"]
-- ["14Guess_the_Flag14ViewControllerC", "correctAnswer"]
-- ["14Guess_the_Flag14ViewControllerC", "countries"]
+- !private ["14Guess_the_Flag14ViewControllerC", "correctAnswer"]
+- !private ["14Guess_the_Flag14ViewControllerC", "countries"]
 - ["14Guess_the_Flag14ViewControllerC", "currentTitle"]
 - ["14Guess_the_Flag14ViewControllerC", "deinit"]
 - ["14Guess_the_Flag14ViewControllerC", "init"]
@@ -1666,20 +1677,18 @@ depends-member:
 - ["14Guess_the_Flag14ViewControllerC", "makeButton"]
 - !private ["14Guess_the_Flag14ViewControllerC", "navigationItem"]
 - !private ["14Guess_the_Flag14ViewControllerC", "present"]
-- ["14Guess_the_Flag14ViewControllerC", "score"]
+- !private ["14Guess_the_Flag14ViewControllerC", "score"]
 - ["14Guess_the_Flag14ViewControllerC", "scoreTapped"]
 - !private ["14Guess_the_Flag14ViewControllerC", "title"]
-- ["14Guess_the_Flag14ViewControllerC", "tryCount"]
+- !private ["14Guess_the_Flag14ViewControllerC", "tryCount"]
 - !private ["14Guess_the_Flag14ViewControllerC", "view"]
 - ["14Guess_the_Flag14ViewControllerC", "viewDidLoad"]
-- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "shuffle"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s14_ArrayProtocolP", "uppercased"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "random"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "uppercased"]
-- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "shuffle"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "uppercased"]
@@ -1689,7 +1698,7 @@ depends-member:
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "uppercased"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "random"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "uppercased"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -1698,17 +1707,16 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
-- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "shuffle"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s19_HasContiguousBytesP", "uppercased"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "random"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "shuffle"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uppercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
@@ -1763,7 +1771,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "widthAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Int"]
-- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
@@ -1824,7 +1832,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
 - !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
-- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "random"]
 - !private ["s21_ObjectiveCBridgeableP", "safeAreaLayoutGuide"]
 - !private ["s21_ObjectiveCBridgeableP", "shuffle"]
@@ -1848,7 +1856,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "widthAnchor"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
-- "Sa"
+- !private "Sa"
 - !private "s10ArraySliceV"
 - "SK"
 - !private "Sz"
@@ -1858,14 +1866,14 @@ depends-nominal:
 - "s7CVarArgP"
 - "Sl"
 - "SL"
-- "10Foundation15ContiguousBytesP"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- "s17CustomReflectableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "10Foundation12DataProtocolP"
-- "Se"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
 - !private "s26DefaultStringInterpolationV"
-- "SE"
+- !private "SE"
 - "SQ"
 - !private "So15UIControlEventsV"
 - "s25ExpressibleByArrayLiteralP"
@@ -1880,8 +1888,8 @@ depends-nominal:
 - !private "Si"
 - "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- "SM"
-- "10Foundation19MutableDataProtocolP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -1900,8 +1908,8 @@ depends-nominal:
 - !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
-- "Sk"
-- "Sm"
+- !private "Sk"
+- !private "Sm"
 - !private "SY"
 - !private "s10SIMDScalarP"
 - "ST"
@@ -1951,21 +1959,21 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - "14Guess_the_Flag14ViewControllerC"
-- "s14_ArrayProtocolP"
+- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- "s24_DestructorSafeContainerP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
-- "s19_HasContiguousBytesP"
-- "s35_HasCustomAnyHashableRepresentationP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- "s21_ObjectiveCBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1997,4 +2005,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9f3bff1a629c79e277f6a6b2f3d0d2e9"
+interface-hash: "47056f6fe78ccb2c13d3e684a9156700"

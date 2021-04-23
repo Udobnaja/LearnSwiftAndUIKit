@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "2f723d261fec7bbbb53306612d33af59"
+build_time: [1619198083, 536396000]
+inputs:
+  "/Users/udobnaja/Desktop/testuikit/Extensions/UIView.swift": [9223372036, 854775807]
+  "/Users/udobnaja/Desktop/testuikit/Guess the Flag/ViewController.swift": [9223372036, 854775807]
+  "/Users/udobnaja/Desktop/testuikit/Guess the Flag/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/udobnaja/Desktop/testuikit/Guess the Flag/SceneDelegate.swift": [9223372036, 854775807]
