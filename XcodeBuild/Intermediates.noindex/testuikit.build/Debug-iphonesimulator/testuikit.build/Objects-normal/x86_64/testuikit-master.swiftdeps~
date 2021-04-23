@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "9cbff9db1de62fa4ace2caf077229462"
-build_time: [1619180075, 713573000]
-inputs:
-  "/Users/udobnaja/Desktop/testuikit/Extensions/UIView.swift": [1619090236, 914186631]
-  "/Users/udobnaja/Desktop/testuikit/testuikit/ViewController.swift": [1619180075, 310239599]
-  "/Users/udobnaja/Desktop/testuikit/testuikit/AppDelegate.swift": [1618833702, 926438189]
-  "/Users/udobnaja/Desktop/testuikit/testuikit/SceneDelegate.swift": [1618924885, 693467401]
-  "/Users/udobnaja/Desktop/testuikit/testuikit/DetailViewController.swift": [1619180075, 331870854]
