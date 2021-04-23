@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "d4c2d35ea743a586b7a3605282283f98"
+build_time: [1619187601, 420972000]
+inputs:
+  "/Users/udobnaja/Desktop/testuikit/Word Scramble/ViewController.swift": [1619187601, 164970991]
+  "/Users/udobnaja/Desktop/testuikit/Word Scramble/AppDelegate.swift": [1619179848, 154876755]
+  "/Users/udobnaja/Desktop/testuikit/Word Scramble/SceneDelegate.swift": [1619180173, 507698356]

@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "01e482ba408a6ddf2a4a1a86dbfd2905"
+build_time: [1619179036, 147646000]
+inputs:
+  "/Users/udobnaja/Desktop/testuikit/Easy Browser/ViewController.swift": [1619178986, 188314774]
+  "/Users/udobnaja/Desktop/testuikit/Easy Browser/AppDelegate.swift": [1619108524, 670175139]
+  "/Users/udobnaja/Desktop/testuikit/Easy Browser/SceneDelegate.swift": [1619178629, 144064921]
+  "/Users/udobnaja/Desktop/testuikit/Easy Browser/TableViewController.swift": [1619178629, 82903937]
