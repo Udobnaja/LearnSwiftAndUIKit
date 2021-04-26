@@ -27,3 +27,10 @@ Create an anagram game while learning about closures and booleans.
 
 ![Word Scramble](https://psv4.userapi.com/c520036/u1845377/docs/d22/707ec7d87eda/word_Scramble.gif)
 
+## 5 Auto Layout
+
+NSLayoutConstraint, Visual Format Language, layout anchors
+
+## 6 Whitehouse Petitions
+
+JSON, Data, UITabBarController
