@@ -95,7 +95,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    loadLevel()
+    performSelector(inBackground: #selector(loadLevel), with: nil)
   }
 
   func levelUp(action: UIAlertAction) {
@@ -103,7 +103,7 @@ class ViewController: UIViewController {
 
     solutions.removeAll(keepingCapacity: true)
 
-    loadLevel()
+    performSelector(inBackground: #selector(loadLevel), with: nil)
 
     for button in letterButtons {
       button.isHidden = false
@@ -163,7 +163,7 @@ class ViewController: UIViewController {
     activatedButtons.removeAll()
   }
 
-  private func loadLevel() {
+  @objc func loadLevel() {
     var clueString = ""
     var solutionString = ""
     var letterBits = [String]()
@@ -189,6 +189,17 @@ class ViewController: UIViewController {
         }
       }
     }
+
+    //[clueString], solutionString: [solutionString], letterBits: letterBits
+    performSelector(onMainThread: #selector(updateLevelViews), with: [[clueString], [solutionString], letterBits], waitUntilDone: false)
+
+  }
+
+  @objc func updateLevelViews(args: [[String]]) {
+    let clueString = args[0][0]
+    let solutionString = args[1][0]
+    let letterBits = args[2]
+
     cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
     answerLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
 
