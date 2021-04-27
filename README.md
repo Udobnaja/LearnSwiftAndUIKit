@@ -34,3 +34,7 @@ NSLayoutConstraint, Visual Format Language, layout anchors
 ## 6 Whitehouse Petitions
 
 JSON, Data, UITabBarController
+
+## 7 Seven Swifty Words
+
+addTarget(), enumerated(), count(), index(of:), joined(), property observers, range operators
