@@ -10,6 +10,12 @@ import UIKit
 class ViewController: UITableViewController {
   var pictures = [String]()
 
+  override func loadView() {
+    super.loadView()
+
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -41,7 +47,7 @@ class ViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let viewCell = UITableViewCell()
+    let viewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
     viewCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
 

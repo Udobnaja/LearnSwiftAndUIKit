@@ -38,3 +38,9 @@ JSON, Data, UITabBarController
 ## 7 Seven Swifty Words
 
 addTarget(), enumerated(), count(), index(of:), joined(), property observers, range operators
+
+## 8 Names to Faces
+
+UICollectionView, UIImagePickerController, UUID, classes
+
+

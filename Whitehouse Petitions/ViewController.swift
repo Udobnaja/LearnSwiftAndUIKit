@@ -11,16 +11,18 @@ class ViewController: UITableViewController {
   private var petitions = [Petition]()
   private var filterdPetitions = [Petition]()
 
+  override func loadView() {
+    super.loadView()
+
+    tableView.register(PetitionViewCell.self, forCellReuseIdentifier: "cell")
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterButtonTapped))
     navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Credits", style: .plain, target: self, action: #selector(creditButtonTapped))
 
-    performSelector(inBackground: #selector(fetchJSON), with: nil)
-  }
-
-  @objc func fetchJSON() {
     let urlString: String
 
     if navigationController?.tabBarItem.tag == 0 {
@@ -31,6 +33,10 @@ class ViewController: UITableViewController {
         urlString = "https://www.hackingwithswift.com/samples/petitions-2.json"
     }
 
+    performSelector(inBackground: #selector(fetchJSON), with: urlString)
+  }
+
+  @objc func fetchJSON(urlString: String) {
 //    DispatchQueue.global(qos: .userInitiated).async {
 //      [weak self] in
 //    }
@@ -82,7 +88,7 @@ class ViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let viewCell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+    let viewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetitionViewCell
     let petition = filterdPetitions[indexPath.row]
 
     viewCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator

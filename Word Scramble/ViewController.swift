@@ -12,9 +12,11 @@ class ViewController: UITableViewController {
   var allWords = [String]()
   var usedWords = [String]()
 
-//  override func loadView() {
-//    super.loadView()
-//  }
+  override func loadView() {
+    super.loadView()
+
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -53,7 +55,7 @@ class ViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let viewCell = UITableViewCell()
+    let viewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
     viewCell.textLabel?.text = usedWords[indexPath.row]
 
