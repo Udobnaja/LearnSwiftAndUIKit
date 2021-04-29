@@ -43,4 +43,9 @@ addTarget(), enumerated(), count(), index(of:), joined(), property observers, ra
 
 UICollectionView, UIImagePickerController, UUID, classes
 
+## 9 Pachinko
+
+SpriteKit, physics, blend modes, radians, CGFloat, NSKeyedUnarchiver
+Dive into SpriteKit to try your hand at fast 2D games.
+
 
