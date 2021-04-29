@@ -29,7 +29,7 @@ class CollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(ImageViewCell.self, forCellWithReuseIdentifier: "cell")
+        self.collectionView!.register(ImageViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         performSelector(inBackground: #selector(loadPictures), with: nil)
 
@@ -105,7 +105,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ImageViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageViewCell
 
         cell.updateProps(text: pictures[indexPath.item], image: UIImage(named: pictures[indexPath.row])!)
     
