@@ -50,6 +50,9 @@
 		5E7A025C26397AE300DF7B53 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A025B26397AE200DF7B53 /* Person.swift */; };
 		5E7A02652639C02900DF7B53 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A02072637201200DF7B53 /* UIView.swift */; };
 		5E7A026F2639D54F00DF7B53 /* PetitionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A026E2639D54E00DF7B53 /* PetitionViewCell.swift */; };
+		5E7A0281263AA09400DF7B53 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A0280263AA09200DF7B53 /* CollectionViewController.swift */; };
+		5E7A028B263AA49A00DF7B53 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A028A263AA49A00DF7B53 /* Image.swift */; };
+		5E7A0295263AA50600DF7B53 /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A0294263AA50600DF7B53 /* ImageViewCell.swift */; };
 		5E7AFF14262DA8A600DF7B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF13262DA8A600DF7B53 /* AppDelegate.swift */; };
 		5E7AFF16262DA8A600DF7B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF15262DA8A600DF7B53 /* SceneDelegate.swift */; };
 		5E7AFF18262DA8A600DF7B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF17262DA8A600DF7B53 /* ViewController.swift */; };
@@ -120,6 +123,9 @@
 		5E7A025126385A7400DF7B53 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		5E7A025B26397AE200DF7B53 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5E7A026E2639D54E00DF7B53 /* PetitionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionViewCell.swift; sourceTree = "<group>"; };
+		5E7A0280263AA09200DF7B53 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		5E7A028A263AA49A00DF7B53 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		5E7A0294263AA50600DF7B53 /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
 		5E7AFF10262DA8A600DF7B53 /* testuikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testuikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7AFF13262DA8A600DF7B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7AFF15262DA8A600DF7B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -332,11 +338,14 @@
 			children = (
 				5E7AFF13262DA8A600DF7B53 /* AppDelegate.swift */,
 				5E7AFF15262DA8A600DF7B53 /* SceneDelegate.swift */,
+				5E7A0280263AA09200DF7B53 /* CollectionViewController.swift */,
 				5E7AFF17262DA8A600DF7B53 /* ViewController.swift */,
 				5E7AFF42262DC48700DF7B53 /* DetailViewController.swift */,
 				5E7AFF1C262DA8A700DF7B53 /* Assets.xcassets */,
 				5E7AFF21262DA8A700DF7B53 /* Info.plist */,
 				5E7AFF28262DAB0D00DF7B53 /* Content */,
+				5E7A028A263AA49A00DF7B53 /* Image.swift */,
+				5E7A0294263AA50600DF7B53 /* ImageViewCell.swift */,
 			);
 			path = testuikit;
 			sourceTree = "<group>";
@@ -736,8 +745,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7A028B263AA49A00DF7B53 /* Image.swift in Sources */,
+				5E7A0281263AA09400DF7B53 /* CollectionViewController.swift in Sources */,
 				5E7A02082637201200DF7B53 /* UIView.swift in Sources */,
 				5E7AFF18262DA8A600DF7B53 /* ViewController.swift in Sources */,
+				5E7A0295263AA50600DF7B53 /* ImageViewCell.swift in Sources */,
 				5E7AFF14262DA8A600DF7B53 /* AppDelegate.swift in Sources */,
 				5E7AFF16262DA8A600DF7B53 /* SceneDelegate.swift in Sources */,
 				5E7AFF43262DC48700DF7B53 /* DetailViewController.swift in Sources */,
