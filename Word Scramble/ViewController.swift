@@ -39,13 +39,23 @@ class ViewController: UITableViewController {
   }
 
   private func startGame() {
-    title = allWords.randomElement()
-    usedWords.removeAll(keepingCapacity: true)
+    let savedTitle = readCurrentWord()
+    title = savedTitle.isEmpty ? allWords.randomElement() : savedTitle
+    saveCurrentWord(title: title!)
+
+    let savedWords = readUsedWords()
+    if savedWords.isEmpty {
+      usedWords.removeAll(keepingCapacity: true)
+    } else {
+      usedWords = savedWords
+    }
 
     tableView.reloadData()
   }
 
   @objc func reloadGame() {
+    saveCurrentWord(title: "")
+    saveUsedWords(words: [String]())
     startGame()
   }
 
@@ -86,6 +96,8 @@ class ViewController: UITableViewController {
       if isOriginal(word: lowerAnswer) {
         if isReal(word: lowerAnswer) {
           usedWords.insert(lowerAnswer, at: 0)
+
+          saveUsedWords(words: usedWords)
 
           // we not using reload data to animate
           let indexPath = IndexPath(row: 0, section: 0)
@@ -144,6 +156,60 @@ class ViewController: UITableViewController {
     let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+  }
+
+  private func saveCurrentWord(title: String) {
+    let jsonEncoder = JSONEncoder()
+
+    if let savedData = try? jsonEncoder.encode(title) {
+      let defaults = UserDefaults.standard
+      defaults.set(savedData, forKey: "currentWord")
+    } else {
+      print("Failed to save word.")
+    }
+  }
+
+  private func saveUsedWords(words: [String]) {
+    let jsonEncoder = JSONEncoder()
+
+    if let savedData = try? jsonEncoder.encode(words) {
+      let defaults = UserDefaults.standard
+      defaults.set(savedData, forKey: "usedWords")
+    } else {
+      print("Failed to used words.")
+    }
+  }
+
+  private func readCurrentWord() -> String {
+    let defaults = UserDefaults.standard
+    var word = ""
+
+    if let savedWord = defaults.object(forKey: "currentWord") as? Data {
+      let jsonDecoder = JSONDecoder()
+
+      do {
+        word = try jsonDecoder.decode(String.self, from: savedWord)
+      } catch {
+        print("Failed to load score.")
+      }
+    }
+    return word
+  }
+
+  private func readUsedWords() -> [String] {
+    let defaults = UserDefaults.standard
+    var words = [String]()
+
+    if let savedWords = defaults.object(forKey: "usedWords") as? Data {
+      let jsonDecoder = JSONDecoder()
+
+      do {
+        words = try jsonDecoder.decode([String].self, from: savedWords)
+      } catch {
+        print("Failed to load score.")
+      }
+    }
+    return words
   }
 }
 

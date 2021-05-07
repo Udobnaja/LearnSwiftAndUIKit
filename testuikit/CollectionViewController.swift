@@ -60,7 +60,7 @@ class CollectionViewController: UICollectionViewController {
 
 
       let screenSize: CGRect = UIScreen.main.bounds
-      let size = screenSize.width / 2 - 2
+      let size = screenSize.width - 1
 
       layout.itemSize = CGSize(width: size, height: size + 58)
 
@@ -95,7 +95,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
 
@@ -106,18 +106,50 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageViewCell
+        let tappedNumber = readTappedNumber(forKey: String(indexPath.item))
 
-        cell.updateProps(text: pictures[indexPath.item], image: UIImage(named: pictures[indexPath.row])!)
+        cell.updateProps(text: "\(pictures[indexPath.item]) tapped \(tappedNumber) count", image: UIImage(named: pictures[indexPath.row])!)
     
         return cell
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      let tappedNumber = readTappedNumber(forKey: String(indexPath.item))
+      saveTapped(number: tappedNumber + 1, forKey: String(indexPath.item))
+      collectionView.reloadData()
       let vc = DetailViewController()
       vc.selectedImage = pictures[indexPath.item]
       vc.title = "Picture \(indexPath.item + 1) of \(pictures.count)"
+      
 
       navigationController?.pushViewController(vc, animated: false)
+    }
+
+    private func saveTapped(number: Int, forKey: String) {
+      let jsonEncoder = JSONEncoder()
+
+      if let savedData = try? jsonEncoder.encode(number) {
+        let defaults = UserDefaults.standard
+        defaults.set(savedData, forKey: forKey)
+      } else {
+        print("Failed to save tappedNumber.")
+      }
+    }
+
+    private func readTappedNumber(forKey: String) -> Int {
+      let defaults = UserDefaults.standard
+      var tappedNumber = 0
+
+      if let savedNumber = defaults.object(forKey: forKey) as? Data {
+        let jsonDecoder = JSONDecoder()
+
+        do {
+          tappedNumber = try jsonDecoder.decode(Int.self, from: savedNumber)
+        } catch {
+          print("Failed to load tappedNumber.")
+        }
+      }
+      return tappedNumber
     }
 
     // MARK: UICollectionViewDelegate

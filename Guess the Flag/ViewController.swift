@@ -49,14 +49,35 @@ class ViewController: UIViewController {
 
   private func askQuestion() {
     guard tryCount < 10 else {
+      let savedScore = readScore()
+
       let ac = UIAlertController(title: "The END, Final score \(score)", message: nil, preferredStyle: .alert)
-      ac.addAction(UIAlertAction(title: "Ok", style: .default))
+      let action = UIAlertAction(title: "OK", style: .default) {
+        [weak self] _ in
+        if let score = self?.score {
+          if score > savedScore {
+            let ac = UIAlertController(title: "You have a new record \(score)", message: nil, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+
+            self?.present(ac, animated: true)
+          }
+        }
+
+      }
+
+      ac.addAction(action)
 
       present(ac, animated: true)
+
+      if score > savedScore {
+        saveScore()
+      }
 
       button1.removeTarget(nil, action: nil, for: .allEvents)
       button2.removeTarget(nil, action: nil, for: .allEvents)
       button3.removeTarget(nil, action: nil, for: .allEvents)
+
+      
 
       return
     }
@@ -127,6 +148,33 @@ class ViewController: UIViewController {
     button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
     button.topAnchor.constraint(equalTo: anchor, constant: 40).isActive = true
     button.widthAnchor.constraint(equalTo: button.heightAnchor, multiplier: 2).isActive = true
+  }
+
+  private func saveScore() {
+    let jsonEncoder = JSONEncoder()
+
+    if let savedData = try? jsonEncoder.encode(score) {
+      let defaults = UserDefaults.standard
+      defaults.set(savedData, forKey: "score")
+    } else {
+      print("Failed to save score.")
+    }
+  }
+
+  private func readScore() -> Int {
+    let defaults = UserDefaults.standard
+    var resultScore = 0
+
+    if let savedScore = defaults.object(forKey: "score") as? Data {
+      let jsonDecoder = JSONDecoder()
+
+      do {
+        resultScore = try jsonDecoder.decode(Int.self, from: savedScore)
+      } catch {
+        print("Failed to load score.")
+      }
+    }
+    return resultScore
   }
 
 
