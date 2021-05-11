@@ -65,6 +65,15 @@
 		5E7A036026456D4F00DF7B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A035F26456D4F00DF7B53 /* ViewController.swift */; };
 		5E7A036526456D5700DF7B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A036426456D5700DF7B53 /* Assets.xcassets */; };
 		5E7A038B26456DD700DF7B53 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A02072637201200DF7B53 /* UIView.swift */; };
+		5E7A03A4264A71FB00DF7B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A03A3264A71FB00DF7B53 /* AppDelegate.swift */; };
+		5E7A03A6264A71FB00DF7B53 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A03A5264A71FB00DF7B53 /* GameScene.sks */; };
+		5E7A03AA264A71FB00DF7B53 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A03A9264A71FB00DF7B53 /* GameScene.swift */; };
+		5E7A03AC264A71FB00DF7B53 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A03AB264A71FB00DF7B53 /* GameViewController.swift */; };
+		5E7A03AF264A71FB00DF7B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A03AD264A71FB00DF7B53 /* Main.storyboard */; };
+		5E7A03B1264A720300DF7B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A03B0264A720300DF7B53 /* Assets.xcassets */; };
+		5E7A03D9264A73D100DF7B53 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A03D7264A73D100DF7B53 /* whackBad.caf */; };
+		5E7A03DA264A73D100DF7B53 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A03D8264A73D100DF7B53 /* whack.caf */; };
+		5E7A03E7264A75FB00DF7B53 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A03E6264A75FA00DF7B53 /* WhackSlot.swift */; };
 		5E7AFF14262DA8A600DF7B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF13262DA8A600DF7B53 /* AppDelegate.swift */; };
 		5E7AFF16262DA8A600DF7B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF15262DA8A600DF7B53 /* SceneDelegate.swift */; };
 		5E7AFF18262DA8A600DF7B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFF17262DA8A600DF7B53 /* ViewController.swift */; };
@@ -153,6 +162,17 @@
 		5E7A035F26456D4F00DF7B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E7A036426456D5700DF7B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7A036926456D5700DF7B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7A03A1264A71FA00DF7B53 /* Whack-a-Penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whack-a-Penguin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7A03A3264A71FB00DF7B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E7A03A5264A71FB00DF7B53 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5E7A03A9264A71FB00DF7B53 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5E7A03AB264A71FB00DF7B53 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5E7A03AE264A71FB00DF7B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E7A03B0264A720300DF7B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E7A03B2264A720300DF7B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7A03D7264A73D100DF7B53 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		5E7A03D8264A73D100DF7B53 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		5E7A03E6264A75FA00DF7B53 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 		5E7AFF10262DA8A600DF7B53 /* testuikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testuikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7AFF13262DA8A600DF7B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7AFF15262DA8A600DF7B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +249,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5E7A035626456D4E00DF7B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7A039E264A71FA00DF7B53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,6 +397,23 @@
 			path = Instafilter;
 			sourceTree = "<group>";
 		};
+		5E7A03A2264A71FA00DF7B53 /* Whack-a-Penguin */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A03A3264A71FB00DF7B53 /* AppDelegate.swift */,
+				5E7A03A5264A71FB00DF7B53 /* GameScene.sks */,
+				5E7A03A9264A71FB00DF7B53 /* GameScene.swift */,
+				5E7A03AB264A71FB00DF7B53 /* GameViewController.swift */,
+				5E7A03E6264A75FA00DF7B53 /* WhackSlot.swift */,
+				5E7A03AD264A71FB00DF7B53 /* Main.storyboard */,
+				5E7A03B0264A720300DF7B53 /* Assets.xcassets */,
+				5E7A03B2264A720300DF7B53 /* Info.plist */,
+				5E7A03D8264A73D100DF7B53 /* whack.caf */,
+				5E7A03D7264A73D100DF7B53 /* whackBad.caf */,
+			);
+			path = "Whack-a-Penguin";
+			sourceTree = "<group>";
+		};
 		5E7AFF07262DA8A600DF7B53 = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +428,7 @@
 				5E7A02262638509700DF7B53 /* Names to Faces */,
 				5E7A02A3263AAFBD00DF7B53 /* Pachinko */,
 				5E7A035A26456D4F00DF7B53 /* Instafilter */,
+				5E7A03A2264A71FA00DF7B53 /* Whack-a-Penguin */,
 				5E7AFF11262DA8A600DF7B53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -401,6 +446,7 @@
 				5E7A02252638509700DF7B53 /* Names to Faces.app */,
 				5E7A02A2263AAFBC00DF7B53 /* Pachinko.app */,
 				5E7A035926456D4F00DF7B53 /* Instafilter.app */,
+				5E7A03A1264A71FA00DF7B53 /* Whack-a-Penguin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -598,6 +644,23 @@
 			productReference = 5E7A035926456D4F00DF7B53 /* Instafilter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5E7A03A0264A71FA00DF7B53 /* Whack-a-Penguin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7A03B3264A720300DF7B53 /* Build configuration list for PBXNativeTarget "Whack-a-Penguin" */;
+			buildPhases = (
+				5E7A039D264A71FA00DF7B53 /* Sources */,
+				5E7A039E264A71FA00DF7B53 /* Frameworks */,
+				5E7A039F264A71FA00DF7B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whack-a-Penguin";
+			productName = "Whack-a-Penguin";
+			productReference = 5E7A03A1264A71FA00DF7B53 /* Whack-a-Penguin.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5E7AFF0F262DA8A600DF7B53 /* testuikit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E7AFF24262DA8A700DF7B53 /* Build configuration list for PBXNativeTarget "testuikit" */;
@@ -665,6 +728,9 @@
 					5E7A035826456D4E00DF7B53 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					5E7A03A0264A71FA00DF7B53 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					5E7AFF0F262DA8A600DF7B53 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -696,6 +762,7 @@
 				5E7A02242638509600DF7B53 /* Names to Faces */,
 				5E7A02A1263AAFBC00DF7B53 /* Pachinko */,
 				5E7A035826456D4E00DF7B53 /* Instafilter */,
+				5E7A03A0264A71FA00DF7B53 /* Whack-a-Penguin */,
 			);
 		};
 /* End PBXProject section */
@@ -768,6 +835,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7A036526456D5700DF7B53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7A039F264A71FA00DF7B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7A03AF264A71FB00DF7B53 /* Main.storyboard in Resources */,
+				5E7A03DA264A73D100DF7B53 /* whack.caf in Resources */,
+				5E7A03D9264A73D100DF7B53 /* whackBad.caf in Resources */,
+				5E7A03A6264A71FB00DF7B53 /* GameScene.sks in Resources */,
+				5E7A03B1264A720300DF7B53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +974,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E7A039D264A71FA00DF7B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7A03AA264A71FB00DF7B53 /* GameScene.swift in Sources */,
+				5E7A03AC264A71FB00DF7B53 /* GameViewController.swift in Sources */,
+				5E7A03E7264A75FB00DF7B53 /* WhackSlot.swift in Sources */,
+				5E7A03A4264A71FB00DF7B53 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E7AFF0C262DA8A600DF7B53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -928,6 +1018,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5E7A02AF263AAFBE00DF7B53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E7A03AD264A71FB00DF7B53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7A03AE264A71FB00DF7B53 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1223,6 +1321,42 @@
 			};
 			name = Release;
 		};
+		5E7A03B4264A720300DF7B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Whack-a-Penguin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "udobnaja.Whack-a-Penguin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5E7A03B5264A720300DF7B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Whack-a-Penguin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "udobnaja.Whack-a-Penguin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 		5E7AFF22262DA8A700DF7B53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1482,6 +1616,15 @@
 			buildConfigurations = (
 				5E7A036B26456D5700DF7B53 /* Debug */,
 				5E7A036C26456D5700DF7B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7A03B3264A720300DF7B53 /* Build configuration list for PBXNativeTarget "Whack-a-Penguin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7A03B4264A720300DF7B53 /* Debug */,
+				5E7A03B5264A720300DF7B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
