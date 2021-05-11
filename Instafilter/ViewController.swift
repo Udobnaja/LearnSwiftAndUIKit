@@ -101,6 +101,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     imageView.contentMode = .scaleAspectFit
     imageView.clipsToBounds = true
+    imageView.alpha = 0
 
     return imageView
   }
@@ -228,6 +229,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
       let processedImage = UIImage(cgImage: cgImage)
       imageView.image = processedImage
+      UIView.animate(withDuration: 3, delay: 0, options: [], animations: {
+        self.imageView.alpha = 1
+      })
     }
   }
 

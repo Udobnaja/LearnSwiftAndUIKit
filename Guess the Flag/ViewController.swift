@@ -73,11 +73,9 @@ class ViewController: UIViewController {
         saveScore()
       }
 
-      button1.removeTarget(nil, action: nil, for: .allEvents)
-      button2.removeTarget(nil, action: nil, for: .allEvents)
-      button3.removeTarget(nil, action: nil, for: .allEvents)
-
-      
+      for button in [button1, button2, button3] {
+        button.removeTarget(nil, action: nil, for: .allEvents)
+      }
 
       return
     }
@@ -86,9 +84,10 @@ class ViewController: UIViewController {
 
     correctAnswer = Int.random(in: 0...2)
 
-    button1.setImage(UIImage(named: countries[0]), for: .normal)
-    button2.setImage(UIImage(named: countries[1]), for: .normal)
-    button3.setImage(UIImage(named: countries[2]), for: .normal)
+    for (index, button) in [button1, button2, button3].enumerated() {
+      button.setImage(UIImage(named: countries[index]), for: .normal)
+      button.transform = .identity
+    }
 
     title = currentTitle
   }
@@ -109,6 +108,10 @@ class ViewController: UIViewController {
   @objc func buttonTapped(sender : UIButton) {
     var title:String
     var message:String
+
+    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [], animations: {
+      sender.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+    })
 
     tryCount += 1
 
